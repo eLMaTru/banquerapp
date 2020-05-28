@@ -1,0 +1,171 @@
+name: la_banquera
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  #addin necesary dependencies
+  http: ^0.12.1
+  intl: ^0.16.1  
+  shared_preferences: ^0.5.6+3
+  scoped_model: ^1.0.1
+  provider: ^4.0.5+1
+  #library para paypal
+  braintree_payment: ^1.2.4
+  
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.5  
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/loteria-image/main-logo.png" 
+  adaptive_icon_background: "#191910" 
+  adaptive_icon_foreground: "assets/images/loteria-image/main-logo.png"   
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    # imagenes para usar icon circular
+    - assets/images/loteria-image/circle-logo/cir-logo-florida-lotery.png
+    - assets/images/loteria-image/circle-logo/cir-logo-ganamas.png
+    - assets/images/loteria-image/circle-logo/cir-logo-juegapega-1.png
+    - assets/images/loteria-image/circle-logo/cir-logo-kino.png
+    - assets/images/loteria-image/circle-logo/cir-logo-laprimera-loteria.png
+    - assets/images/loteria-image/circle-logo/cir-logo-loteka.png
+    - assets/images/loteria-image/circle-logo/cir-logo-loterianacional.png
+    - assets/images/loteria-image/circle-logo/cir-logo-loteriareal.png
+    - assets/images/loteria-image/circle-logo/cir-logo-loto.png
+    - assets/images/loteria-image/circle-logo/cir-logo-lotopool.png
+    - assets/images/loteria-image/circle-logo/cir-logo-lotoreal.png
+    - assets/images/loteria-image/circle-logo/cir-logo-megachance.png
+    - assets/images/loteria-image/circle-logo/cir-logo-megaloto.png
+    - assets/images/loteria-image/circle-logo/cir-logo-megamillions.png
+    - assets/images/loteria-image/circle-logo/cir-logo-pega3mas.png
+    - assets/images/loteria-image/circle-logo/cir-logo-powerball.png
+    - assets/images/loteria-image/circle-logo/cir-logo-quinielaypale.png
+    - assets/images/loteria-image/circle-logo/megamillion-logo.png
+    - assets/images/loteria-image/circle-logo/cir-logo-ny.png
+
+    #imagenes grandes orange
+    - assets/images/loteria-image/square-logo/orange/bannerpowerball.png
+    - assets/images/loteria-image/square-logo/orange/logo-el-extra-loteka.png
+    - assets/images/loteria-image/square-logo/orange/logo-juegamas-pegamas.png
+    - assets/images/loteria-image/square-logo/orange/bannerpowerball.png
+    - assets/images/loteria-image/square-logo/orange/logo-la-fecha-9-pm.png
+    - assets/images/loteria-image/square-logo/orange/logo-la-fecha.png
+    - assets/images/loteria-image/square-logo/orange/logo-loteria-gana-mas.png
+    - assets/images/loteria-image/square-logo/orange/logo-loteria-nacional.png
+    - assets/images/loteria-image/square-logo/orange/logo-loteria-new-york-noche.png
+    - assets/images/loteria-image/square-logo/orange/logo-loteria-new-york-tarde.png
+    - assets/images/loteria-image/square-logo/orange/logo-loto-lotomas.png
+    - assets/images/loteria-image/square-logo/orange/logo-loto-mas-2.png
+    - assets/images/loteria-image/square-logo/orange/logo-loto-pool-2.png
+    - assets/images/loteria-image/square-logo/orange/logo-loto-real-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-mascota-millonaria.png
+    - assets/images/loteria-image/square-logo/orange/logo-mega-chance-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-mega-chance-repartidera.png
+    - assets/images/loteria-image/square-logo/orange/logo-mega-lotto-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-mega-millions-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-pega-3-mas-2.png
+    - assets/images/loteria-image/square-logo/orange/logo-pega-4-real.png
+    - assets/images/loteria-image/square-logo/orange/logo-powerball-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-quiniela-loteka-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-quiniela-pale-1.png
+    - assets/images/loteria-image/square-logo/orange/logo-quinielita-real.png
+    - assets/images/loteria-image/square-logo/orange/logo-sorteo-quiniela-real.png
+    - assets/images/loteria-image/square-logo/orange/logo-super-kino-tv-2.png
+    - assets/images/loteria-image/square-logo/orange/lotomiami.png
+    
+    
+    
+    
+
+    - assets/images/loteria-image/square-logo/bannerfloridalotto.png
+    - assets/images/loteria-image/bannerloteka.png
+    - assets/images/loteria-image/bannernacional.png
+    - assets/images/loteria-image/bannerny.png
+   
+    - assets/images/loteria-image/bannerquinielaypale.png
+    - assets/images/loteria-image/bannerreal.png
+    - assets/images/loteria-image/leidsanoche.png
+    - assets/images/loteria-image/leidsatarde.png
+    
+    - assets/images/loteria-image/lotekanoche.png
+   
+    - assets/images/loteria-image/nacionalnoche.png
+    - assets/images/loteria-image/nacionaltarde.png
+    - assets/images/loteria-image/nynoche.png
+    - assets/images/loteria-image/nytarde.png
+    - assets/images/loteria-image/realtarde.png
+    - assets/images/loteria-image/logo-loto-lotomas.png
+    - assets/images/loteria-image/laprimeratarde.png
+    - assets/images/loteria-image/loto-real-logo.png
+    - assets/images/loteria-image/megamillion-logo.png
+    - assets/images/loteria-image/main-logo.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
